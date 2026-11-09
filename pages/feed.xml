@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>El mundo del toro de lidia</title>
+    <link>https://ejemplo.com/index.html</link>
+    <description>Novedades, ganaderías, encastes y plazas de toros emblemáticas en el mundo taurino.</description>
+    <language>es-es</language>
+
+    <item>
+      <title>Ganadería Miura: La leyenda viva del campo bravo</title>
+      <link>https://ejemplo.com/pages/ganaderias.html#miura</link>
+      <description>Conoce la morfología y el origen de los míticos toros de Miura desde 1842.</description>
+    </item>
+
+    <item>
+      <title>Las Ventas y la Maestranza: Catedrales del Toreo</title>
+      <link>https://ejemplo.com/pages/ganaderias.html#plazas</link>
+      <description>Un recorrido histórico por el Tendido 7 de Madrid y la Puerta del Príncipe de Sevilla.</description>
+    </item>
+
+    <item>
+      <title>El toro de lidia y su vida en la dehesa ibérica</title>
+      <link>https://ejemplo.com/index.html</link>
+      <description>Descubre las características físicas y el entorno natural en el que se cría el toro bravo en libertad.</description>
+    </item>
+  </channel>
+</rss>
