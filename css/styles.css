@@ -110,6 +110,13 @@ nav a:focus {
     border-radius: 4px;
 }
 
+.tarjeta video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
                           /*            TABLAS DE DATOS         */
 table {
     width: 100%;
@@ -232,5 +239,9 @@ footer a {
 
     .tarjeta {
         max-width: 100%;
-    }
+    }.tarjeta iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
 }
