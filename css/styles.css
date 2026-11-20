@@ -1,0 +1,247 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #d1822d; /* Tono albero/tierra de la pagina */
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 15px;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*               ENCABEZADOS Y NAVEGACIÓN FLEXBOX                */
+h1,
+h2,
+h3 {
+    color: #111111;
+    border-bottom: 2px solid #CCCCCC;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #1A1A1A;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #F5F0EB;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1A1A1A;
+    background-color: #d1822d;
+}
+
+                 /*         BLOQUES CONTENEDORES (CLASES REUTILIZABLES)            */
+.bloque-marfil {
+    background-color: #F5F0EB;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bloque-negro {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bloque-verde {
+    background-color: #F4F6F4;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+                         /*         TARJETAS EN FLEXBOX            */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    padding: 15px;
+    flex: 1 1 280px;
+    max-width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.tarjeta video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+                          /*            TABLAS DE DATOS         */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #DDDDDD;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1A1A1A;
+    color: #F5F0EB;
+}
+
+tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+                             /*            FORMULARIO DE CONTACTO           */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #d1822d;
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: #1A1A1A;
+    color: #F5F0EB;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #d1822d;
+    color: #1A1A1A;
+}
+
+                                      /*       IMÁGENES Y FOOTER           */
+img {
+    border: 2px solid #CCCCCC;
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer,
+.seccion-personal {
+    background-color: #1A1A1A;
+    color: #F5F0EB;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 6px;
+    text-align: center;
+} footer h3,
+.seccion-personal h3 {
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #d1822d;
+}
+
+                              /*               MEDIA QUERIES (DESIGN RESPONSIVE)          */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        max-width: 100%;
+    }.tarjeta iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+}
